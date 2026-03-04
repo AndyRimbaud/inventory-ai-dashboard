@@ -10,7 +10,7 @@ from services.kpi_engine import (
 
 st.set_page_config(page_title="Prototype Intelligence", layout="wide")
 
-st.title("🧠 Prototype Intelligence")
+st.title("Prototype Intelligence")
 st.markdown("Visualizing AI model performance on inventory reconciliation.")
 
 # Load Data

@@ -70,7 +70,7 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.title("📦 AI Inventory Intelligence Platform")
+st.title(" AI Inventory Intelligence Platform")
 
 st.markdown("""
 Operational analytics platform for validating AI-powered inventory reconciliation.
@@ -90,7 +90,7 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.markdown("""
-    ### 🤖 Prototype Intelligence
+    ###  Prototype Intelligence
     Diagnose AI detection performance across SKUs, warehouses and time.
 
     Includes:
@@ -101,7 +101,7 @@ with col1:
 
 with col2:
     st.markdown("""
-    ### 💼 Business Impact
+    ###  Business Impact
     Quantify the economic value of AI deployment.
 
     Includes:
@@ -112,7 +112,7 @@ with col2:
 
 with col3:
     st.markdown("""
-    ### 🎛 Pilot Simulator
+    ###  Pilot Simulator
     Test different deployment scenarios.
 
     Includes:
