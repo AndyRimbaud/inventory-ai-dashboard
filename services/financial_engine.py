@@ -1,0 +1,13 @@
+# Constants in EUR
+BASE_REVENUE = 5_000_000
+SHRINK_RATE = 0.015
+
+HARDWARE_COST = 15_000
+SAAS_COST = 5_000
+IMPLEMENTATION_COST = 10_000
+TRAINING_COST = 5_000
+
+REFERENCE_ACCURACY = 95.0
+
+def calculate_financials(accuracy: float) -> dict:
+    pass
