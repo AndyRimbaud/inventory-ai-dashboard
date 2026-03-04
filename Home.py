@@ -1,27 +1,95 @@
 import streamlit as st
-from data.mock_data_generator import generate_mock_data
 
 st.set_page_config(
-    page_title="Inventory AI Validation Dashboard",
+    page_title="AI Inventory Intelligence",
     layout="wide"
 )
 
-st.title("Inventory AI Validation System")
+# ---------- GLOBAL STYLE ----------
+st.markdown("""
+<style>
 
-df_inventory, df_skus, df_warehouses = generate_mock_data()
+.main {
+    background-color:#0e1117;
+}
 
-st.subheader("Dataset Preview")
+.metric-card{
+    background-color:#111111;
+    border:1px solid #2a2a2a;
+    border-radius:12px;
+    padding:22px;
+}
+
+.metric-title{
+    font-size:14px;
+    color:#9aa0a6;
+}
+
+.metric-value{
+    font-size:36px;
+    font-weight:700;
+}
+
+.metric-tag{
+    font-size:12px;
+    color:#4ade80;
+}
+
+.section-title{
+    font-size:22px;
+    font-weight:600;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+st.title("📦 AI Inventory Intelligence Platform")
+
+st.markdown("""
+Operational analytics platform for validating AI-powered inventory reconciliation.
+
+Use the navigation sidebar to explore:
+
+• **Prototype Intelligence** — Model performance diagnostics  
+• **Business Impact** — Financial ROI modeling  
+• **Pilot Simulator** — Interactive scenario simulation
+""")
+
+st.divider()
+
+st.subheader("Platform Overview")
 
 col1, col2, col3 = st.columns(3)
 
 with col1:
-    st.write("Inventory Logs")
-    st.dataframe(df_inventory.head())
+    st.markdown("""
+    ### 🤖 Prototype Intelligence
+    Diagnose AI detection performance across SKUs, warehouses and time.
+
+    Includes:
+    - Accuracy metrics
+    - Error heatmaps
+    - Detection distributions
+    """)
 
 with col2:
-    st.write("SKU Master")
-    st.dataframe(df_skus.head())
+    st.markdown("""
+    ### 💼 Business Impact
+    Quantify the economic value of AI deployment.
+
+    Includes:
+    - ROI modelling
+    - Payback curves
+    - Financial breakdown
+    """)
 
 with col3:
-    st.write("Warehouses")
-    st.dataframe(df_warehouses.head())
+    st.markdown("""
+    ### 🎛 Pilot Simulator
+    Test different deployment scenarios.
+
+    Includes:
+    - Accuracy simulation
+    - Multi-warehouse scaling
+    - ROI sensitivity
+    """)
