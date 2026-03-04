@@ -5,6 +5,33 @@ st.set_page_config(
     layout="wide"
 )
 
+# ---------- SIDEBAR PRODUCT NAV ----------
+
+st.sidebar.title("AI Inventory Intelligence")
+
+st.sidebar.markdown("""
+Operational analytics platform for validating  
+AI-powered inventory reconciliation systems.
+""")
+
+st.sidebar.divider()
+
+st.sidebar.markdown("### Modules")
+
+st.sidebar.markdown("""
+• Prototype Intelligence  
+• Business Impact  
+• Pilot Simulator
+""")
+
+st.sidebar.divider()
+
+st.sidebar.markdown("### System Status")
+
+st.sidebar.success("AI Detection Engine Online")
+st.sidebar.success("Financial Model Active")
+st.sidebar.success("Simulation Engine Ready")
+
 # ---------- GLOBAL STYLE ----------
 st.markdown("""
 <style>
